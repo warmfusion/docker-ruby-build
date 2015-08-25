@@ -17,7 +17,4 @@ RUN \
   gem install geminabox
 
 # Define mountable directories.
-VOLUME ["/workspace"]
-
-# Define working directory.
-WORKDIR /workspace
+ADD . /

@@ -10,11 +10,4 @@ MAINTAINER Toby Jackson <toby@warmfusion.co.uk>
 RUN \
   apt-get update && \
   apt-get install -y ruby ruby-dev && \
-  rm -rf /var/lib/apt/lists/* 
-
-# Define mountable directories.
-VOLUME ["/workspace"]
-
-# Define working directory.
-WORKDIR /workspace
-
+  rm -rf /var/lib/apt/lists/*
